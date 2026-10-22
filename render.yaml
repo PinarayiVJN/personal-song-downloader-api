@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: personal-song-downloader-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: FRONTEND_ORIGINS
+        value: "*"
+      - key: ALLOWED_MEDIA_DOMAINS
+        value: youtube.com,youtu.be,music.youtube.com,soundcloud.com,bandcamp.com
+      - key: MAX_FILE_BYTES
+        value: "314572800"
+      - key: JOB_TTL_SECONDS
+        value: "1800"
