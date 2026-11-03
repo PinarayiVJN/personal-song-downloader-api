@@ -13,3 +13,7 @@ services:
         value: "314572800"
       - key: JOB_TTL_SECONDS
         value: "1800"
+      - key: YTDLP_REMOTE_COMPONENTS
+        value: "ejs:github"
+      - key: MAX_ACTIVE_JOB_AGE_SECONDS
+        value: "7200"

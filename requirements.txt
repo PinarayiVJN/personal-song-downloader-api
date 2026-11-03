@@ -1,4 +1,5 @@
 fastapi>=0.115,<1
 uvicorn[standard]>=0.30,<1
-yt-dlp
+yt-dlp==2026.10.26
+yt-dlp-ejs
 pydantic>=2.8,<3
